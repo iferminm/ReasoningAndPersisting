@@ -17,5 +17,14 @@
 	<classpathentry kind="lib" path="/home/israelord/workspace/ReasoningAndPersisting/lib/pellet/pellet-owlapiv3.jar"/>
 	<classpathentry kind="lib" path="/home/israelord/workspace/ReasoningAndPersisting/lib/pellet/pellet-query.jar"/>
 	<classpathentry kind="lib" path="/home/israelord/workspace/ReasoningAndPersisting/bin/com/main"/>
+	<classpathentry kind="lib" path="/home/israelord/workspace/ReasoningAndPersisting/lib/jena/xercesImpl-2.7.1.jar"/>
+	<classpathentry kind="lib" path="/home/israelord/workspace/ReasoningAndPersisting/lib/jena/iri-0.8.jar"/>
+	<classpathentry kind="lib" path="/home/israelord/workspace/ReasoningAndPersisting/lib/jena/icu4j-3.4.4.jar"/>
+	<classpathentry kind="lib" path="/home/israelord/workspace/ReasoningAndPersisting/lib/pellet/aterm-java-1.6.jar"/>
+	<classpathentry kind="lib" path="/home/israelord/workspace/ReasoningAndPersisting/lib/pellet/pellet-rules.jar"/>
+	<classpathentry kind="lib" path="/home/israelord/workspace/ReasoningAndPersisting/lib/pellet/pellet-el.jar"/>
+	<classpathentry kind="lib" path="/home/israelord/workspace/ReasoningAndPersisting/lib/pellet/pellet-cli.jar"/>
+	<classpathentry kind="lib" path="/home/israelord/workspace/ReasoningAndPersisting/lib/pellet/pellet-pellint.jar"/>
+	<classpathentry kind="lib" path="/home/israelord/workspace/ReasoningAndPersisting/lib/pellet/pellet-test.jar"/>
 	<classpathentry kind="output" path="bin"/>
 </classpath>
