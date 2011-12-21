@@ -26,5 +26,7 @@
 	<classpathentry kind="lib" path="/home/israelord/workspace/ReasoningAndPersisting/lib/pellet/pellet-cli.jar"/>
 	<classpathentry kind="lib" path="/home/israelord/workspace/ReasoningAndPersisting/lib/pellet/pellet-pellint.jar"/>
 	<classpathentry kind="lib" path="/home/israelord/workspace/ReasoningAndPersisting/lib/pellet/pellet-test.jar"/>
+	<classpathentry kind="lib" path="/home/israelord/workspace/ReasoningAndPersisting/lib/virtjdbc3.jar"/>
+	<classpathentry kind="lib" path="/home/israelord/workspace/ReasoningAndPersisting/lib/virt_jena.jar"/>
 	<classpathentry kind="output" path="bin"/>
 </classpath>
