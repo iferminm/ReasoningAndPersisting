@@ -6,6 +6,8 @@ import com.hp.hpl.jena.rdf.model.*;
 import com.hp.hpl.jena.reasoner.Reasoner;
 import com.hp.hpl.jena.util.FileManager;
 
+import java.io.FileNotFoundException;
+import java.io.FileOutputStream;
 import java.io.InputStream;
 
 public class OwlReasoner {
@@ -17,8 +19,7 @@ public class OwlReasoner {
 	
 	public OwlReasoner(String model) {
 		this.modelLocation = model;
-		String[] arg = model.split(".");
-		this.reasonedModelLocation = arg[0] + "Reasoned.owl";
+		this.reasonedModelLocation = null;
 	}
 	
 	public OwlReasoner(String model, String reasoned) {
@@ -44,6 +45,16 @@ public class OwlReasoner {
 		}
 	}
 	
+	private void writeToFile(Model model) {
+		try {
+			FileOutputStream out = new FileOutputStream(this.reasonedModelLocation);
+			model.write(out);
+		} catch (FileNotFoundException e) {
+			System.out.println("File not found and imposible to create");
+		}
+		
+	}
+	
 	public void generateReasonedModel() {
 		Model emptyModel = ModelFactory.createDefaultModel();
 		
@@ -51,10 +62,13 @@ public class OwlReasoner {
 		Reasoner reasoner = PelletReasonerFactory.theInstance().create();
 		
 		InfModel model = ModelFactory.createInfModel(reasoner, emptyModel);
-		InputStream in = FileManager.get().open(modelLocation);
+		InputStream in = FileManager.get().open(this.modelLocation);
 		
 		model.read(in, "");
 		this.printModel(model);
+		if (this.reasonedModelLocation != null) {
+			this.writeToFile(model);
+		}		
 	}
 
 	public String getModelLocation() {
