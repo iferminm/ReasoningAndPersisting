@@ -8,6 +8,8 @@ public class Main {
 	public static void main(String args[]) {
 		OwlReasoner or = new OwlReasoner(model, reasoned);
 		or.generateReasonedModel();
+		VirtuosoImporter vi = new VirtuosoImporter();
+		vi.toVirtuoso(reasoned);
 		System.out.println("Done.");
 	}
 
