@@ -12,5 +12,4 @@ public class Main {
 		vi.toVirtuoso(reasoned);
 		System.out.println("Done.");
 	}
-
 }
